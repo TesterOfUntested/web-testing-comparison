@@ -1,0 +1,14 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-please": "publish-please",
+    "prepublishOnly": "publish-please guard"
+  },
+  "author": "",
+  "license": "ISC"
+}
