@@ -21,7 +21,7 @@ The project consists of the following parts:
 ### Selenium
 1. Ensure you have Selenium WebDriver installed.
 2. Navigate to the `selenium` directory.
-3. Run tests using the appropriate commands.
+3. Run tests using Mocha command `npx mocha test`
 
 ### Cypress
 1. Navigate to the `cypress` directory.
