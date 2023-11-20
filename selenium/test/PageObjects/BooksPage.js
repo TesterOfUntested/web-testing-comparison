@@ -8,7 +8,7 @@ class BooksPage {
   
     async open() {
       await this.driver.wait(until.titleIs('DEMOQA'), 10000);
-      await this.driver.wait(until.elementIsVisible(this.driver.findElement(By.xpath("//input[@id='searchBox']"))), 100000);
+      await this.driver.wait(until.elementIsVisible(this.driver.findElement(By.xpath("//input[@id='searchBox']"))), 10000);
     }
 
     async setInputInSearch(condition) {
