@@ -29,7 +29,7 @@ The project consists of the following parts:
 
 ### Playwright
 1. Navigate to the `playwright` directory.
-2. Run tests using the appropriate commands.
+2. Run tests using command `npx playwright test`.
 
 ### TestCafe
 1. Navigate to the `testcafe` directory.
