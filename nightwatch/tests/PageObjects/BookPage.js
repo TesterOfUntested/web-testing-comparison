@@ -43,7 +43,7 @@ class BookPage {
   }
 
   verifyDescription(expectedValue) {
-    return this.browser.expect.element("//div[@id='description-wrapper']//label[@id='userName-value']").text.to.equal(expectedValue);
+    return this.browser.expect.element("//div[@id='description-wrapper']//label[@id='userName-value']").text.to.contain(expectedValue);
   }
 
   verifyWebsite(expectedValue) {

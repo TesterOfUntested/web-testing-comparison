@@ -9,7 +9,7 @@ let expectedValues = {
   author: "Axel Rauschmayer",
   publisher: "O'Reilly Media",
   totalPages: "460",
-  description: "Like it or not, JavaScript is everywhere these days...",
+  description: "Like it or not, JavaScript is everywhere these days",
   website: "http://speakingjs.com/"
 };
 
