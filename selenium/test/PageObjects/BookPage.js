@@ -6,6 +6,17 @@ class BookPage {
     open() {
       return this.browser.url('https://demoqa.com/').waitForElementVisible('#addNewRecordButton', 10000);
     }
+
+    verifyBookDetails(expectedValues) {
+        this.verifyIsbn(expectedValues.isbn);
+        this.verifyTitle(expectedValues.title);
+        this.verifySubTitle(expectedValues.subTitle);
+        this.verifyAuthor(expectedValues.author);
+        this.verifyPublisher(expectedValues.publisher);
+        this.verifyTotalPages(expectedValues.totalPages);
+        this.verifyDescription(expectedValues.description);
+        this.verifyWebsite(expectedValues.website);
+      }
   
     verifyIsbn(expectedValue) {
       return this.browser.expect.element("//div[@id='ISBN-wrapper']//label[@id='userName-value']").text.to.equal(expectedValue);
@@ -37,17 +48,6 @@ class BookPage {
 
     verifyWebsite(expectedValue) {
       return this.browser.expect.element("//div[@id='website-wrapper']//label[@id='userName-value']").text.to.equal(expectedValue);
-    }
-
-    verifyBookDetails(expectedValues) {
-      this.verifyIsbn(expectedValues.isbn);
-      this.verifyTitle(expectedValues.title);
-      this.verifySubTitle(expectedValues.subTitle);
-      this.verifyAuthor(expectedValues.author);
-      this.verifyPublisher(expectedValues.publisher);
-      this.verifyTotalPages(expectedValues.totalPages);
-      this.verifyDescription(expectedValues.description);
-      this.verifyWebsite(expectedValues.website);
     }
   }
   
