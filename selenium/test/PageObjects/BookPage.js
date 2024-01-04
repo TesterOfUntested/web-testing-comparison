@@ -6,7 +6,7 @@ class BookPage {
       this.driver = driver;
       this.open()
     }
-  
+
     async open() {
       await this.driver.wait(until.titleIs('DEMOQA'), 10000);
       await this.driver.wait(until.elementIsVisible(this.driver.findElement(By.xpath("//button[@id='addNewRecordButton']"))), 10000);
